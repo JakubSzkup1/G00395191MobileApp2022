@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <!--Champions League Logo-->
+      <img src="../assets/icon/uefa1.png" width="125">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Navigation buttons so user can navigate pages-->
+  <ion-button color="light" [routerLink]="['/home']" routerDirection="backward">Home</ion-button>
+  <br>
+  <ion-button color="light" [routerLink]="['/page1']" routerDirection="forward">Teams</ion-button>
+  <br>
+  <ion-button color="light" [routerLink]="'/page3'" routerDirection="forward">Social Media</ion-button>
+  <br>
+  <ion-button color="light" [routerLink]="'/page4'" routerDirection="forward">Flashlight</ion-button>
+  <br>
+
+  <ion-list>
+    <!--Read in from jsonblob-->
+    <!--<ion-item *ngFor="let scorer of goalscorerData" >-->
+   <ion-label>
+     <h1>Champions League statistics this season</h1>
+     <h1>{{scorer.data}}</h1> 
+     <!--Issue with loading in statistics from jsonblob.-->
+   </ion-label>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <!--Champions League Logo-->
+      <img src="../assets/icon/uefa1.png" width="125">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!--Navigation buttons so user can navigate pages-->
+ <ion-button color="light" [routerLink]="['/home']" routerDirection="backward">Home</ion-button>
+ <br>
+ <ion-button color="light" [routerLink]="['/page1']" routerDirection="forward">Teams</ion-button>
+ <br>
+ <ion-button color="light" [routerLink]="['/page2']" routerDirection="forward">Top Goalscorers</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page3']" routerDirection="forward">Social Media</ion-button>
+<br>
+
+<!--use opf cordova plugin-->
+
+<ion-button (click)="Flashlight()">FlashLight</ion-button>
+<h3>click me to shine!</h3>
+<img src="../assets/icon/flashlight.png " width="500">
+</ion-content>

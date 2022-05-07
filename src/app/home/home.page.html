@@ -1,20 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <!--Champions League Logo-->
+      <img src="../assets/icon/uefa1.png" width="125">
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content  [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+<!--Navigation buttons so user can navigate pages-->
+<ion-button  color="light" [routerLink]="['/page1']" routerDirection="forward">Teams</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page2']" routerDirection="forward">Top Goalscorers</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page3']" routerDirection="forward">Social Media</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page4']" routerDirection="forward">Flashlight</ion-button>
+<br>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<!--Champions League Description-->
+<h1>Champions league</h1>
+<p>The UEFA Champions League is an annual clun competition which is organised by UEFA(Union of European Football Association).</p>
+<p>The competition is contested by top-division European clubs.</p>
+<p>The competition winners get decided trough a round robin group stage to qualify for a double-legged knockout format, and a single leg final.</p>
+
+<img src="../assets/icon/round16teams.png">
 </ion-content>

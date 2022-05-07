@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <!--Champions League Logo-->
+      <img src="../assets/icon/uefa1.png" width="125">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--Navigation buttons so user can navigate pages-->
+<ion-button color="light" [routerLink]="['/home']" routerDirection="backward">Home</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page2']" routerDirection="forward">Top Goalscorers</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page3']" routerDirection="forward">Social Media</ion-button>
+<br>
+<ion-button color="light" [routerLink]="['/page4']" routerDirection="forward">Flashlight</ion-button>
+<br>
+
+
+<!-- Teams assigned using Radio button Control-->
+<h1>The team i support is: {{myTeam}}</h1><!--String interpolation for display-->
+
+<ion-button (click)="SaveTeam()">Save Team</ion-button>
+<ion-list>
+  <ion-radio-group [(ngModel)]="myTeam">
+    <ion-list-header>
+      <ion-label>Teams</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Bayern Munich</ion-label>
+      <ion-radio slot="start" value="Bayern Munich"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Villa Real</ion-label>
+      <ion-radio slot="start" value="Villa Real"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Manchester City</ion-label>
+      <ion-radio slot="start" value="Manchester City"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Athletico Madrid</ion-label>
+      <ion-radio slot="start" value="Athletico Madrid"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Chelsea</ion-label>
+      <ion-radio slot="start" value="Chelsea"></ion-radio>
+    </ion-item>
+    
+
+    <ion-item>
+      <ion-label>Real Madrid</ion-label>
+      <ion-radio slot="start" value="Real Madrid"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Liverpool</ion-label>
+      <ion-radio slot="start" value="Liverpool"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Benefica</ion-label>
+      <ion-radio slot="start" value="Benefica"></ion-radio>
+    </ion-item>
+
+    
+  </ion-radio-group>
+</ion-list>
+
+</ion-content>

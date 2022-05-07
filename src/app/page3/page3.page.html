@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <!--Champions League Logo-->
+      <img src="../assets/icon/uefa1.png" width="125">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!--Navigation buttons so user can navigate pages-->
+ <ion-button color="light" [routerLink]="['/home']" routerDirection="backward">Home</ion-button>
+ <br>
+ <ion-button color="light" [routerLink]="['/page1']" routerDirection="forward">Teams</ion-button>
+ <br>
+ <ion-button color="light" [routerLink]="['/page2']" routerDirection="forward">Top Goalscorers</ion-button>
+<br>
+ <ion-button color="light" [routerLink]="['/page4']" routerDirection="forward">Flashlight</ion-button>
+ <br>
+
+ <!--Links for Champions league social medias-->
+ <h2>See Whats happening in Champions League/News & Updates!</h2>
+ <ion-icon name="logo-twitter"></ion-icon><a href="https://twitter.com/ChampionsLeague">Twitter</a>
+ <ion-icon name="logo-facebook"></ion-icon><a href="https://www.facebook.com/ChampionsLeague">Facebook</a>
+ <br>
+ <ion-icon name="logo-reddit"></ion-icon><a href="https://www.reddit.com/r/championsleague/">Reddit</a>
+ <ion-icon name="logo-instagram"></ion-icon><a href="https://www.instagram.com/championsleague/">Instagram</a>
+ <br>
+ <ion-icon name="logo-youtube"></ion-icon><a href="https://www.youtube.com/c/BTSport">Youtube</a>
+</ion-content>
